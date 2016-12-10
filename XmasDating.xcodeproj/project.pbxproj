@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */; };
+		99F51D7A1DFBB1EA009F23D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D791DFBB1EA009F23D0 /* ViewController.swift */; };
+		99F51D7D1DFBB1EA009F23D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D7B1DFBB1EA009F23D0 /* Main.storyboard */; };
+		99F51D7F1DFBB1EA009F23D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */; };
+		99F51D821DFBB1EA009F23D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */; };
+		99F51D8D1DFBB1EA009F23D0 /* XmasDatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D8C1DFBB1EA009F23D0 /* XmasDatingTests.swift */; };
+		99F51D981DFBB1EA009F23D0 /* XmasDatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99F51D891DFBB1EA009F23D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F51D6C1DFBB1EA009F23D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99F51D731DFBB1EA009F23D0;
+			remoteInfo = XmasDating;
+		};
+		99F51D941DFBB1EA009F23D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F51D6C1DFBB1EA009F23D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99F51D731DFBB1EA009F23D0;
+			remoteInfo = XmasDating;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99F51D741DFBB1EA009F23D0 /* XmasDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmasDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99F51D791DFBB1EA009F23D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99F51D7C1DFBB1EA009F23D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99F51D811DFBB1EA009F23D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99F51D831DFBB1EA009F23D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F51D881DFBB1EA009F23D0 /* XmasDatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmasDatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F51D8C1DFBB1EA009F23D0 /* XmasDatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmasDatingTests.swift; sourceTree = "<group>"; };
+		99F51D8E1DFBB1EA009F23D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F51D931DFBB1EA009F23D0 /* XmasDatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmasDatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmasDatingUITests.swift; sourceTree = "<group>"; };
+		99F51D991DFBB1EA009F23D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99F51D711DFBB1EA009F23D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F51D851DFBB1EA009F23D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F51D901DFBB1EA009F23D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99F51D6B1DFBB1EA009F23D0 = {
+			isa = PBXGroup;
+			children = (
+				99F51D761DFBB1EA009F23D0 /* XmasDating */,
+				99F51D8B1DFBB1EA009F23D0 /* XmasDatingTests */,
+				99F51D961DFBB1EA009F23D0 /* XmasDatingUITests */,
+				99F51D751DFBB1EA009F23D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99F51D751DFBB1EA009F23D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99F51D741DFBB1EA009F23D0 /* XmasDating.app */,
+				99F51D881DFBB1EA009F23D0 /* XmasDatingTests.xctest */,
+				99F51D931DFBB1EA009F23D0 /* XmasDatingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99F51D761DFBB1EA009F23D0 /* XmasDating */ = {
+			isa = PBXGroup;
+			children = (
+				99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */,
+				99F51D791DFBB1EA009F23D0 /* ViewController.swift */,
+				99F51D7B1DFBB1EA009F23D0 /* Main.storyboard */,
+				99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */,
+				99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */,
+				99F51D831DFBB1EA009F23D0 /* Info.plist */,
+			);
+			path = XmasDating;
+			sourceTree = "<group>";
+		};
+		99F51D8B1DFBB1EA009F23D0 /* XmasDatingTests */ = {
+			isa = PBXGroup;
+			children = (
+				99F51D8C1DFBB1EA009F23D0 /* XmasDatingTests.swift */,
+				99F51D8E1DFBB1EA009F23D0 /* Info.plist */,
+			);
+			path = XmasDatingTests;
+			sourceTree = "<group>";
+		};
+		99F51D961DFBB1EA009F23D0 /* XmasDatingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */,
+				99F51D991DFBB1EA009F23D0 /* Info.plist */,
+			);
+			path = XmasDatingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99F51D731DFBB1EA009F23D0 /* XmasDating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99F51D9C1DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDating" */;
+			buildPhases = (
+				99F51D701DFBB1EA009F23D0 /* Sources */,
+				99F51D711DFBB1EA009F23D0 /* Frameworks */,
+				99F51D721DFBB1EA009F23D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XmasDating;
+			productName = XmasDating;
+			productReference = 99F51D741DFBB1EA009F23D0 /* XmasDating.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99F51D871DFBB1EA009F23D0 /* XmasDatingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99F51D9F1DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDatingTests" */;
+			buildPhases = (
+				99F51D841DFBB1EA009F23D0 /* Sources */,
+				99F51D851DFBB1EA009F23D0 /* Frameworks */,
+				99F51D861DFBB1EA009F23D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99F51D8A1DFBB1EA009F23D0 /* PBXTargetDependency */,
+			);
+			name = XmasDatingTests;
+			productName = XmasDatingTests;
+			productReference = 99F51D881DFBB1EA009F23D0 /* XmasDatingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99F51D921DFBB1EA009F23D0 /* XmasDatingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99F51DA21DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDatingUITests" */;
+			buildPhases = (
+				99F51D8F1DFBB1EA009F23D0 /* Sources */,
+				99F51D901DFBB1EA009F23D0 /* Frameworks */,
+				99F51D911DFBB1EA009F23D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99F51D951DFBB1EA009F23D0 /* PBXTargetDependency */,
+			);
+			name = XmasDatingUITests;
+			productName = XmasDatingUITests;
+			productReference = 99F51D931DFBB1EA009F23D0 /* XmasDatingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99F51D6C1DFBB1EA009F23D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "THANH LEVAN";
+				TargetAttributes = {
+					99F51D731DFBB1EA009F23D0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RGHN9JB5CQ;
+						ProvisioningStyle = Automatic;
+					};
+					99F51D871DFBB1EA009F23D0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RGHN9JB5CQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 99F51D731DFBB1EA009F23D0;
+					};
+					99F51D921DFBB1EA009F23D0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RGHN9JB5CQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 99F51D731DFBB1EA009F23D0;
+					};
+				};
+			};
+			buildConfigurationList = 99F51D6F1DFBB1EA009F23D0 /* Build configuration list for PBXProject "XmasDating" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99F51D6B1DFBB1EA009F23D0;
+			productRefGroup = 99F51D751DFBB1EA009F23D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99F51D731DFBB1EA009F23D0 /* XmasDating */,
+				99F51D871DFBB1EA009F23D0 /* XmasDatingTests */,
+				99F51D921DFBB1EA009F23D0 /* XmasDatingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99F51D721DFBB1EA009F23D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F51D821DFBB1EA009F23D0 /* LaunchScreen.storyboard in Resources */,
+				99F51D7F1DFBB1EA009F23D0 /* Assets.xcassets in Resources */,
+				99F51D7D1DFBB1EA009F23D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F51D861DFBB1EA009F23D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F51D911DFBB1EA009F23D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99F51D701DFBB1EA009F23D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F51D7A1DFBB1EA009F23D0 /* ViewController.swift in Sources */,
+				99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F51D841DFBB1EA009F23D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F51D8D1DFBB1EA009F23D0 /* XmasDatingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F51D8F1DFBB1EA009F23D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F51D981DFBB1EA009F23D0 /* XmasDatingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99F51D8A1DFBB1EA009F23D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99F51D731DFBB1EA009F23D0 /* XmasDating */;
+			targetProxy = 99F51D891DFBB1EA009F23D0 /* PBXContainerItemProxy */;
+		};
+		99F51D951DFBB1EA009F23D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99F51D731DFBB1EA009F23D0 /* XmasDating */;
+			targetProxy = 99F51D941DFBB1EA009F23D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99F51D7B1DFBB1EA009F23D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99F51D7C1DFBB1EA009F23D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99F51D811DFBB1EA009F23D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99F51D9A1DFBB1EA009F23D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99F51D9B1DFBB1EA009F23D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99F51D9D1DFBB1EA009F23D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				INFOPLIST_FILE = XmasDating/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDating;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		99F51D9E1DFBB1EA009F23D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				INFOPLIST_FILE = XmasDating/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDating;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		99F51DA01DFBB1EA009F23D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				INFOPLIST_FILE = XmasDatingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDatingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmasDating.app/XmasDating";
+			};
+			name = Debug;
+		};
+		99F51DA11DFBB1EA009F23D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				INFOPLIST_FILE = XmasDatingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDatingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmasDating.app/XmasDating";
+			};
+			name = Release;
+		};
+		99F51DA31DFBB1EA009F23D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				INFOPLIST_FILE = XmasDatingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDatingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XmasDating;
+			};
+			name = Debug;
+		};
+		99F51DA41DFBB1EA009F23D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				INFOPLIST_FILE = XmasDatingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDatingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XmasDating;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99F51D6F1DFBB1EA009F23D0 /* Build configuration list for PBXProject "XmasDating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F51D9A1DFBB1EA009F23D0 /* Debug */,
+				99F51D9B1DFBB1EA009F23D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99F51D9C1DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F51D9D1DFBB1EA009F23D0 /* Debug */,
+				99F51D9E1DFBB1EA009F23D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99F51D9F1DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDatingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F51DA01DFBB1EA009F23D0 /* Debug */,
+				99F51DA11DFBB1EA009F23D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99F51DA21DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDatingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F51DA31DFBB1EA009F23D0 /* Debug */,
+				99F51DA41DFBB1EA009F23D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99F51D6C1DFBB1EA009F23D0 /* Project object */;
+}
