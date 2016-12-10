@@ -17,12 +17,22 @@ class ViewController: UIViewController {
     }
     @IBAction func start(_ sender: Any) {
         let email = emailField.text;
-        if (email == nil) || (email?.isEmpty)! {
+    
+        if (email == nil) || (email?.isEmpty)!{
             return
         }
-        XmasDating.user_info(email: email!)
+        
+        if !email!.isValidEmail() {
+            print("not valid email")
+            return
+        }
+        
+//        XmasDating.user_info(email: email!)
+        
         
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
