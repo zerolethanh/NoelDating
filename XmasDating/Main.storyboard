@@ -656,7 +656,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="UPLOAD"/>
                                 <connections>
-                                    <segue destination="zGW-vb-tDO" kind="show" id="LyL-pa-wFV"/>
+                                    <action selector="upload:" destination="iqL-hU-V6H" eventType="touchUpInside" id="qhp-1U-rXG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -665,16 +665,17 @@
                     <navigationItem key="navigationItem" id="gq7-fq-PjJ"/>
                     <connections>
                         <outlet property="imgView" destination="5NU-fe-BgP" id="e9e-xk-MT9"/>
+                        <segue destination="zGW-vb-tDO" kind="show" identifier="toPropertiesUserController" id="cRR-2c-5fd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYu-5F-ebv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1220" y="1679"/>
         </scene>
-        <!--View Controller-->
+        <!--User Properties View Controller-->
         <scene sceneID="2Dj-2y-mob">
             <objects>
-                <viewController id="zGW-vb-tDO" sceneMemberID="viewController">
+                <viewController id="zGW-vb-tDO" customClass="UserPropertiesViewController" customModule="XmasDating" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YAW-LD-5BN"/>
                         <viewControllerLayoutGuide type="bottom" id="DTi-BP-I0V"/>
@@ -683,35 +684,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bijin3" translatesAutoresizingMaskIntoConstraints="NO" id="nB2-jo-r49">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bijin3" translatesAutoresizingMaskIntoConstraints="NO" id="nB2-jo-r49">
                                 <rect key="frame" x="67" y="72" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yQG-wx-DFJ">
-                                <rect key="frame" x="67" y="329" width="240" height="239"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GQC-9B-uro">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GQC-9B-uro" id="Me7-H8-93d">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9Q-ok-teA">
                                 <rect key="frame" x="136" y="576" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7nb-S5-jOG">
+                                <rect key="frame" x="67" y="353" width="240" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="f8Z-F9-3yE" detailTextLabel="h1Y-hA-Z9o" style="IBUITableViewCellStyleValue1" id="A4Q-Qi-w1G">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A4Q-Qi-w1G" id="9Q1-ax-7f6">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8Z-F9-3yE">
+                                                    <rect key="frame" x="15" y="11" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h1Y-hA-Z9o">
+                                                    <rect key="frame" x="181" y="11" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zGW-vb-tDO" id="g6n-LM-pQc"/>
+                                    <outlet property="delegate" destination="zGW-vb-tDO" id="WJs-sq-pbc"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="0WH-8S-pKu" kind="show" id="dQj-H3-D8r"/>
+                        <outlet property="propertiesTable" destination="7nb-S5-jOG" id="oNF-lP-bse"/>
+                        <outlet property="selfImageView" destination="nB2-jo-r49" id="6WA-UU-H50"/>
+                        <segue destination="0WH-8S-pKu" kind="show" identifier="toSearchEmailViewController" id="dQj-H3-D8r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zmD-a8-co7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -767,10 +790,10 @@
             </objects>
             <point key="canvasLocation" x="-1993" y="1652"/>
         </scene>
-        <!--View Controller-->
+        <!--Email Search View Controller-->
         <scene sceneID="KCP-VK-jdq">
             <objects>
-                <viewController id="0WH-8S-pKu" sceneMemberID="viewController">
+                <viewController id="0WH-8S-pKu" customClass="EmailSearchViewController" customModule="XmasDating" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4il-SJ-xOr"/>
                         <viewControllerLayoutGuide type="bottom" id="xWD-gG-hWa"/>
@@ -951,6 +974,6 @@
         <image name="bijin6" width="497" height="702"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c97-zX-RxG"/>
+        <segue reference="dQj-H3-D8r"/>
     </inferredMetricsTieBreakers>
 </document>

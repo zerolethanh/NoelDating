@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */; };
+		9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9932022E1DFC0DB300E7F336 /* Photos.framework */; };
+		9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */; };
+		9961775C1DFC3917009DCC31 /* UserPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */; };
 		99A47F6E1DFBBA66009AE8B2 /* XmasDating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */; };
 		99A47F771DFBBF63009AE8B2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A47F761DFBBF63009AE8B2 /* Alamofire.framework */; };
 		99A47F781DFBBF63009AE8B2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99A47F761DFBBF63009AE8B2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -19,7 +22,7 @@
 		99F51D8D1DFBB1EA009F23D0 /* XmasDatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D8C1DFBB1EA009F23D0 /* XmasDatingTests.swift */; };
 		99F51D981DFBB1EA009F23D0 /* XmasDatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */; };
 		99F51DA91DFBB44D009F23D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F51DA81DFBB44D009F23D0 /* Main.storyboard */; };
-		99F51DAB1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */; };
+		99F51DAB1DFBB46F009F23D0 /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51DAA1DFBB46F009F23D0 /* UploadPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9932022E1DFC0DB300E7F336 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSearchViewController.swift; sourceTree = "<group>"; };
+		9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPropertiesViewController.swift; sourceTree = "<group>"; };
 		99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmasDating.swift; sourceTree = "<group>"; };
 		99A47F761DFBBF63009AE8B2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		99A47F7A1DFBC308009AE8B2 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +77,7 @@
 		99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmasDatingUITests.swift; sourceTree = "<group>"; };
 		99F51D991DFBB1EA009F23D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F51DA81DFBB44D009F23D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoupleChoosePhotoViewController.swift; sourceTree = "<group>"; };
+		99F51DAA1DFBB46F009F23D0 /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */,
 				99A47F771DFBBF63009AE8B2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +118,7 @@
 		99A47F731DFBBF1A009AE8B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9932022E1DFC0DB300E7F336 /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,13 +149,15 @@
 			isa = PBXGroup;
 			children = (
 				993202291DFBF2D600E7F336 /* Helpers */,
+				99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */,
 				99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */,
 				99A47F7A1DFBC308009AE8B2 /* EmailViewController.swift */,
-				99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */,
-				99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */,
+				99F51DAA1DFBB46F009F23D0 /* UploadPhotoViewController.swift */,
+				9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */,
 				99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */,
 				99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */,
 				99F51DA81DFBB44D009F23D0 /* Main.storyboard */,
+				996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */,
 				99F51D831DFBB1EA009F23D0 /* Info.plist */,
 				99A47F7C1DFBCA74009AE8B2 /* Extensions.swift */,
 			);
@@ -310,10 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9961775C1DFC3917009DCC31 /* UserPropertiesViewController.swift in Sources */,
 				99A47F7D1DFBCA74009AE8B2 /* Extensions.swift in Sources */,
 				99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */,
-				99F51DAB1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift in Sources */,
+				99F51DAB1DFBB46F009F23D0 /* UploadPhotoViewController.swift in Sources */,
 				9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */,
+				9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */,
 				99A47F6E1DFBBA66009AE8B2 /* XmasDating.swift in Sources */,
 				99A47F7B1DFBC308009AE8B2 /* EmailViewController.swift in Sources */,
 			);

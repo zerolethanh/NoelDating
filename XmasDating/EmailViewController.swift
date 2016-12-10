@@ -24,19 +24,21 @@ class EmailViewController: UIViewController {
             return
         }
         XmasDating.user_info(email: email!){
-            user_info in
+            [weak self]user_info in
             
             writeUserInfo(data: user_info)
+            save(key: "_token", value: user_info["_token"] as! String)
+            
             
             if let isNewUser = user_info["isNewUser"] as? Bool {
                 
                 if !isNewUser {
                     //go to select screen
             
-                    self.performSegue(withIdentifier: "isNotNewUser", sender: nil)
+                    self?.performSegue(withIdentifier: "isNotNewUser", sender: nil)
                 }else{
                     // go to new user photo selections
-                    self.performSegue(withIdentifier: "isNewUser", sender: nil)
+                    self?.performSegue(withIdentifier: "isNewUser", sender: nil)
                 }
             }
             
@@ -68,7 +70,7 @@ class XmasDating {
     static let user_url = url + "/user"
     static let user_email_url = user_url + "/email"
     static let user_email_reg = user_url + "/reg-email"
-    
+    static let photo_upload = url + "/photo/upload"
     static func user_info(email: String, callBack: @escaping (_ user_info: Dictionary<String, Any>) -> () ){
         request(XmasDating.user_email_url + "/\(email)").responseJSON { (res) in
 //            debugPrint(res)
@@ -99,35 +101,35 @@ class XmasDating {
     
 }
 
-class  User {
-    static let isNewUser = false
-    static let user :Dictionary<String, Any>! = nil
-    static let exists = false
-    static let _token : String! = nil
-    
-    static func infoFromUserDefaults(){
-        
-    }
-    static func saveToUserDefaults(data: Dictionary<String,Any>) {
-        let d = UserDefaults.standard
-        d.set(data["isNewUser"], forKey: "isNewUser")
-        d.setValue(data["user"], forKey: "user")
-        d.set(data["exists"], forKey: "exists")
-        d.set(data["_token"], forKey: "_token")
-        d.synchronize()
-    }
-    
-    static func user(key : String?) -> Any? {
-        let d = UserDefaults.standard
-        let user = d.dictionary(forKey: "user")
-        if key == nil {
-            return user
-        }
-        return user?[key!]
-    }
-    
-    static func token()-> String {
-        let d = UserDefaults.standard
-        return d.string(forKey: "_token")!
-    }
-}
+//class  User {
+//    static let isNewUser = false
+//    static let user :Dictionary<String, Any>! = nil
+//    static let exists = false
+//    static let _token : String! = nil
+//    
+//    static func infoFromUserDefaults(){
+//        
+//    }
+//    static func saveToUserDefaults(data: Dictionary<String,Any>) {
+//        let d = UserDefaults.standard
+//        d.set(data["isNewUser"], forKey: "isNewUser")
+//        d.setValue(data["user"], forKey: "user")
+//        d.set(data["exists"], forKey: "exists")
+//        d.set(data["_token"], forKey: "_token")
+//        d.synchronize()
+//    }
+//    
+//    static func user(key : String?) -> Any? {
+//        let d = UserDefaults.standard
+//        let user = d.dictionary(forKey: "user")
+//        if key == nil {
+//            return user
+//        }
+//        return user?[key!]
+//    }
+//    
+//    static func token()-> String {
+//        let d = UserDefaults.standard
+//        return d.string(forKey: "_token")!
+//    }
+//}
