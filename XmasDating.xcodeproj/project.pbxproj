@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */; };
 		99F51D7A1DFBB1EA009F23D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D791DFBB1EA009F23D0 /* ViewController.swift */; };
-		99F51D7D1DFBB1EA009F23D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D7B1DFBB1EA009F23D0 /* Main.storyboard */; };
 		99F51D7F1DFBB1EA009F23D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */; };
 		99F51D821DFBB1EA009F23D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */; };
 		99F51D8D1DFBB1EA009F23D0 /* XmasDatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D8C1DFBB1EA009F23D0 /* XmasDatingTests.swift */; };
 		99F51D981DFBB1EA009F23D0 /* XmasDatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */; };
+		99F51DA91DFBB44D009F23D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F51DA81DFBB44D009F23D0 /* Main.storyboard */; };
+		99F51DAB1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		99F51D741DFBB1EA009F23D0 /* XmasDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmasDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99F51D791DFBB1EA009F23D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99F51D7C1DFBB1EA009F23D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F51D811DFBB1EA009F23D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F51D831DFBB1EA009F23D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		99F51D931DFBB1EA009F23D0 /* XmasDatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmasDatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F51D971DFBB1EA009F23D0 /* XmasDatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmasDatingUITests.swift; sourceTree = "<group>"; };
 		99F51D991DFBB1EA009F23D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F51DA81DFBB44D009F23D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoupleChoosePhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 			children = (
 				99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */,
 				99F51D791DFBB1EA009F23D0 /* ViewController.swift */,
-				99F51D7B1DFBB1EA009F23D0 /* Main.storyboard */,
+				99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */,
 				99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */,
 				99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */,
+				99F51DA81DFBB44D009F23D0 /* Main.storyboard */,
 				99F51D831DFBB1EA009F23D0 /* Info.plist */,
 			);
 			path = XmasDating;
@@ -235,9 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F51DA91DFBB44D009F23D0 /* Main.storyboard in Resources */,
 				99F51D821DFBB1EA009F23D0 /* LaunchScreen.storyboard in Resources */,
 				99F51D7F1DFBB1EA009F23D0 /* Assets.xcassets in Resources */,
-				99F51D7D1DFBB1EA009F23D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +267,7 @@
 			files = (
 				99F51D7A1DFBB1EA009F23D0 /* ViewController.swift in Sources */,
 				99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */,
+				99F51DAB1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +303,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		99F51D7B1DFBB1EA009F23D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99F51D7C1DFBB1EA009F23D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -421,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -434,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
