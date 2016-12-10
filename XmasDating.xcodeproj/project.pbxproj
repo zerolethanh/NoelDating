@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99A47F6E1DFBBA66009AE8B2 /* XmasDating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */; };
+		99A47F771DFBBF63009AE8B2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A47F761DFBBF63009AE8B2 /* Alamofire.framework */; };
+		99A47F781DFBBF63009AE8B2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99A47F761DFBBF63009AE8B2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */; };
 		99F51D7A1DFBB1EA009F23D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F51D791DFBB1EA009F23D0 /* ViewController.swift */; };
 		99F51D7F1DFBB1EA009F23D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */; };
@@ -34,7 +37,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		99A47F791DFBBF63009AE8B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99A47F781DFBBF63009AE8B2 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmasDating.swift; sourceTree = "<group>"; };
+		99A47F741DFBBF1B009AE8B2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		99A47F761DFBBF63009AE8B2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		99F51D741DFBB1EA009F23D0 /* XmasDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmasDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99F51D791DFBB1EA009F23D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A47F771DFBBF63009AE8B2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99A47F731DFBBF1A009AE8B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99A47F741DFBBF1B009AE8B2 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99F51D6B1DFBB1EA009F23D0 = {
 			isa = PBXGroup;
 			children = (
+				99A47F761DFBBF63009AE8B2 /* Alamofire.framework */,
 				99F51D761DFBB1EA009F23D0 /* XmasDating */,
 				99F51D8B1DFBB1EA009F23D0 /* XmasDatingTests */,
 				99F51D961DFBB1EA009F23D0 /* XmasDatingUITests */,
 				99F51D751DFBB1EA009F23D0 /* Products */,
+				99A47F731DFBBF1A009AE8B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +130,7 @@
 		99F51D761DFBB1EA009F23D0 /* XmasDating */ = {
 			isa = PBXGroup;
 			children = (
+				99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */,
 				99F51D771DFBB1EA009F23D0 /* AppDelegate.swift */,
 				99F51D791DFBB1EA009F23D0 /* ViewController.swift */,
 				99F51DAA1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift */,
@@ -138,6 +170,7 @@
 				99F51D701DFBB1EA009F23D0 /* Sources */,
 				99F51D711DFBB1EA009F23D0 /* Frameworks */,
 				99F51D721DFBB1EA009F23D0 /* Resources */,
+				99A47F791DFBBF63009AE8B2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +301,7 @@
 				99F51D7A1DFBB1EA009F23D0 /* ViewController.swift in Sources */,
 				99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */,
 				99F51DAB1DFBB46F009F23D0 /* CoupleChoosePhotoViewController.swift in Sources */,
+				99A47F6E1DFBBA66009AE8B2 /* XmasDating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = XmasDating/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,6 +465,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RGHN9JB5CQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = XmasDating/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
