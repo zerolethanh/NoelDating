@@ -413,6 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RGHN9JB5CQ;
 				INFOPLIST_FILE = XmasDating/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RGHN9JB5CQ;
 				INFOPLIST_FILE = XmasDating/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LVT.XmasDating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +514,7 @@
 				99F51D9E1DFBB1EA009F23D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99F51D9F1DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDatingTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +523,7 @@
 				99F51DA11DFBB1EA009F23D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99F51DA21DFBB1EA009F23D0 /* Build configuration list for PBXNativeTarget "XmasDatingUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +532,7 @@
 				99F51DA41DFBB1EA009F23D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
