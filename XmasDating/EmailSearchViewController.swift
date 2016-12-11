@@ -156,10 +156,20 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         let al = UIAlertController(title: "Requests", message: "FROM:" + requestJson["from_emails"][0].stringValue, preferredStyle: .alert)
         
         let ac = UIAlertAction(title: "Accept", style: .default) { (action) in
-            print(action)
+            // update accepted = 1;
             
-            //toStartDatingViewController
-            self.performSegue(withIdentifier: "toStartDatingViewController", sender: nil)
+            request(XmasDating.req_accept, method: .get, parameters: ["id": requestJson["r"]["id"]])
+            .responseJSON(completionHandler: { (res) in
+                let j = res.result.json()
+                if j["r"]["accepted"].boolValue == true  {
+                    //toStartDatingViewController
+                    self.performSegue(withIdentifier: "toStartDatingViewController", sender: nil)
+                }else {
+                    print("can not be accepted")
+                }
+                
+            })
+            
         }
         
         let no = UIAlertAction(title: "NO", style: .destructive)
