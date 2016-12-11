@@ -755,7 +755,7 @@
             </objects>
             <point key="canvasLocation" x="-87.200000000000003" y="1665.5172413793105"/>
         </scene>
-        <!--Email View Controller-->
+        <!--Xmas Dating-->
         <scene sceneID="qTw-X3-XnV">
             <objects>
                 <viewController id="GGK-yn-Aaf" customClass="EmailViewController" customModule="XmasDating" customModuleProvider="target" sceneMemberID="viewController">
@@ -797,7 +797,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95761400461196899" green="0.83375626802444458" blue="0.93156427145004272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bOv-8I-PZb"/>
+                    <navigationItem key="navigationItem" title="Xmas Dating" id="bOv-8I-PZb"/>
                     <connections>
                         <outlet property="emailField" destination="16y-cM-Phc" id="cQp-Wl-j0B"/>
                         <segue destination="iqL-hU-V6H" kind="show" identifier="isNewUser" id="8WQ-Hz-OTP"/>
