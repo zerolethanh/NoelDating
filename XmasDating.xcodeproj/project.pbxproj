@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9920294E1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920294C1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift */; };
 		9920294F1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9920294D1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib */; };
+		992029511DFCE4B300CB2A04 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992029501DFCE4B300CB2A04 /* MapKit.framework */; };
+		992029531DFCE5FE00CB2A04 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992029521DFCE5FE00CB2A04 /* MapViewController.swift */; };
 		9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */; };
 		9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9932022E1DFC0DB300E7F336 /* Photos.framework */; };
 		9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		9920294C1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; };
 		9920294D1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListCollectionViewCell.xib; sourceTree = "<group>"; };
+		992029501DFCE4B300CB2A04 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		992029521DFCE5FE00CB2A04 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9932022E1DFC0DB300E7F336 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSearchViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992029511DFCE4B300CB2A04 /* MapKit.framework in Frameworks */,
 				9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */,
 				99A47F771DFBBF63009AE8B2 /* Alamofire.framework in Frameworks */,
 			);
@@ -122,6 +127,7 @@
 		99A47F731DFBBF1A009AE8B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				992029501DFCE4B300CB2A04 /* MapKit.framework */,
 				9932022E1DFC0DB300E7F336 /* Photos.framework */,
 			);
 			name = Frameworks;
@@ -159,6 +165,7 @@
 				99F51DAA1DFBB46F009F23D0 /* UploadPhotoViewController.swift */,
 				9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */,
 				996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */,
+				992029521DFCE5FE00CB2A04 /* MapViewController.swift */,
 				99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */,
 				99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */,
 				99F51DA81DFBB44D009F23D0 /* Main.storyboard */,
@@ -330,6 +337,7 @@
 				9961775C1DFC3917009DCC31 /* UserPropertiesViewController.swift in Sources */,
 				99A47F7D1DFBCA74009AE8B2 /* Extensions.swift in Sources */,
 				99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */,
+				992029531DFCE5FE00CB2A04 /* MapViewController.swift in Sources */,
 				99F51DAB1DFBB46F009F23D0 /* UploadPhotoViewController.swift in Sources */,
 				9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */,
 				9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */,

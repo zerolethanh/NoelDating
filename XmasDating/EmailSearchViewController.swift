@@ -94,11 +94,40 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func refresh(_ sender: Any) {
-        
+    
+    @IBAction func pull(_ sender: Any) {
+        request(XmasDating.req_pull, method: .get, parameters: [
+            "to_email": EMAIL()])
+            .responseJSON {
+                [weak self] (res) in
+                let j = res.result.json()
+                
+                print(j)
+                let numberOfRequests = j["numberOfRequests"].intValue
+                if numberOfRequests > 0 {
+                    
+                    self?.showPulledRequest(j)
+                }
+        }
     }
     
-    
+    func showPulledRequest(_ requestJson: JSON){
+        let al = UIAlertController(title: "Requests", message: "FROM:" + requestJson["from_emails"][0].stringValue, preferredStyle: .alert)
+        
+        let ac = UIAlertAction(title: "Accept", style: .default) { (action) in
+            print(action)
+            
+            //toStartDatingViewController
+            self.performSegue(withIdentifier: "toStartDatingViewController", sender: nil)
+        }
+        
+        let no = UIAlertAction(title: "NO", style: .destructive)
+        
+        al.addAction(ac)
+        al.addAction(no)
+        
+        present(al, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -75,6 +75,7 @@ class XmasDating {
     static let user_all = user_url + "/all"
     static let photo_sug = photo_url + "/sug"
     static let req_send = url + "/req/send"
+    static let req_pull = url + "/req/pull"
     
     static func user_info(email: String, callBack: @escaping (_ user_info: Dictionary<String, Any>) -> () ){
         request(XmasDating.user_email_url + "/\(email)").responseJSON { (res) in

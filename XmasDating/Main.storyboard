@@ -868,7 +868,7 @@
                     <navigationItem key="navigationItem" title="Do U want a Request?" id="vid-Yz-x3u">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="eJG-KM-Soy">
                             <connections>
-                                <action selector="refresh:" destination="0WH-8S-pKu" id="ITz-We-i1g"/>
+                                <action selector="pull:" destination="0WH-8S-pKu" id="395-rm-mnl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -877,48 +877,63 @@
                         <outlet property="selectedUserImgView" destination="w7w-39-H6w" id="Wrn-vA-9l0"/>
                         <outlet property="selfImageView" destination="mWa-Tx-xRu" id="JRQ-uW-ZlJ"/>
                         <outlet property="userListCollectionView" destination="xlK-PS-TuN" id="j09-MT-bGv"/>
-                        <segue destination="E7d-b9-dyP" kind="show" id="I3Y-zQ-Bwj">
-                            <nil key="action"/>
-                        </segue>
+                        <segue destination="nP2-d4-vGz" kind="show" identifier="toStartDatingViewController" id="4qL-gr-pg4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu6-Vx-ZBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1220" y="2443.6281859070468"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hrY-iY-fg2">
+        <!--Map View Controller-->
+        <scene sceneID="dUy-tg-lF5">
             <objects>
-                <viewController id="E7d-b9-dyP" sceneMemberID="viewController">
+                <viewController id="nP2-d4-vGz" customClass="MapViewController" customModule="XmasDating" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="V47-xa-WSh"/>
-                        <viewControllerLayoutGuide type="bottom" id="UWo-c2-W2v"/>
+                        <viewControllerLayoutGuide type="top" id="vxI-5M-3kk"/>
+                        <viewControllerLayoutGuide type="bottom" id="uXk-My-Nej"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="z22-aF-8yh">
+                    <view key="view" contentMode="scaleToFill" id="B4C-OV-ATX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bijin5" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-dN-gUZ">
-                                <rect key="frame" x="67" y="96" width="240" height="240"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81t-YV-5qB">
+                                <rect key="frame" x="0.0" y="72" width="375" height="469"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGW-k9-nAj">
-                                <rect key="frame" x="92" y="412" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Invite"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXa-ad-77P">
-                                <rect key="frame" x="259" y="412" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel"/>
-                            </button>
+                                <connections>
+                                    <outlet property="delegate" destination="nP2-d4-vGz" id="2y2-ow-Gqg"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-gq-7pF">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="laZ-IC-Gll"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5Ik-pt-QFu"/>
+                                    <barButtonItem style="plain" id="6N7-cH-bOO">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="YYj-Ad-drk">
+                                            <rect key="frame" x="75" y="7" width="225" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iib-nr-Jvu"/>
+                                    <barButtonItem title="Send" id="tKu-2i-x4Q"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="81t-YV-5qB" id="PJw-8q-NkJ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GEf-x9-pvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnN-Fy-ZNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-513" y="2444"/>
+            <point key="canvasLocation" x="-335" y="2444"/>
         </scene>
     </scenes>
     <resources>
