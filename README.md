@@ -52,3 +52,7 @@ https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/5
 ##アーキテクチャー図
 https://esa-pages.io/p/sharing/5032/posts/6/d2223d9352464a1736c7.html
 
+## Presentation
+
+Noel_Dating_Presentation.pdf
+
