@@ -29,6 +29,8 @@ UITableViewDelegate,UITableViewDataSource{
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(true)
+        selfImageView.layer.cornerRadius = 10;
+        selfImageView.clipsToBounds = true;
         
         showImage()
     }

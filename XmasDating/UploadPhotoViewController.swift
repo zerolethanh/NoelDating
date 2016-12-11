@@ -25,6 +25,11 @@ class CoupleChoosePhotoViewController: UIViewController,UIImagePickerControllerD
         }
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        imgView.layer.cornerRadius = 10;
+        imgView.clipsToBounds = true;
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

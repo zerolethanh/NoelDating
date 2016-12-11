@@ -32,9 +32,16 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        selectedUserImgView.layer.cornerRadius = 10;
+        selectedUserImgView.clipsToBounds = true;
+        selfImageView.layer.cornerRadius = 10;
+        selfImageView.clipsToBounds = true;
+        
         requestUserList()
         requestSelfImage()
     }
