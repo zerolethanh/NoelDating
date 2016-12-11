@@ -88,8 +88,49 @@ UICollectionViewDelegate, UICollectionViewDataSource {
             ])
         .responseJSON { (res) in
             print(res.result.json())
+            //invite 完了
+            let j = res.result.json()
+            
+            self.afterRequestSendSuccess(j)
+        
         }
     }
+    
+    func afterRequestSendSuccess(_ j: JSON){
+        let al = UIAlertController(title: "Requests", message: "Request was sent. \n Please wait for Accept", preferredStyle: .alert)
+        
+        let ac = UIAlertAction(title: "Is Accepted?", style: .default) { (action) in
+            
+            request(XmasDating.req_is_accepted, method: .get, parameters: [ "id": j["id"].stringValue ])
+            .responseJSON(completionHandler: { [weak self] (res) in
+                debugPrint(res)
+                //request accepted json
+                let r = res.result.json()
+                
+                //NOT accepted then show this alert again
+                if r["accepted"].boolValue == false {
+                    self?.afterRequestSendSuccess(j)
+                    
+                } else {
+                    // accepted
+                    //toStartDatingViewController
+                    self?.performSegue(withIdentifier: "toStartDatingViewController", sender: nil)
+                }
+                
+            })
+            
+
+        }
+        
+        let no = UIAlertAction(title: "I don't want to wait more.", style: .destructive)
+        
+        al.addAction(ac)
+        al.addAction(no)
+        
+        present(al, animated: true, completion: nil)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
