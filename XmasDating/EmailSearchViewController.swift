@@ -73,12 +73,16 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         
     }
     
+    @IBOutlet weak var inviteButton: UIButton!
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        print(indexPath)
 //        print(userList[indexPath.item])
         selectedUser = userList[indexPath.item]
         
         selectedUserImgView.fromURL(url: selectedUser["IMAGE"].stringValue)
+        
+        inviteButton.setValue(false, forKey: "hidden")
         
     }
     @IBAction func invite(_ sender: Any) {
