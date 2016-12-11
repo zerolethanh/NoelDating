@@ -28,6 +28,8 @@ Open XmasDating.xcodeproj and press Command-R to run the app
   input location to search, or choose channel that you want.
   show location or channel on map.
   if user near the others at the same channel then can chat although have no internet. 
+  
+  
 ##オープンソースライブラリ一覧
 
 
@@ -37,25 +39,14 @@ Open XmasDating.xcodeproj and press Command-R to run the app
 https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
 
 
-#2 chat, talk or video call with each others.
-+ http://quickblox.com/developers/SimpleSample-chat_users-ios
-+ http://quickblox.com/developers/Sample-webrtc-ios
-
-
-#3 View map
+#2 View map
 + https://github.com/googlemaps/OpenInGoogleMaps-iOS
 
 
-#4 Push notification when next dating location
-+ https://www.raywenderlich.com/123862/push-notifications-tutorial
 
-
-#5 input location name then search
-+ https://www.thorntech.com/2016/01/how-to-search-for-location-using-apples-mapkit/
-
-
-#6 Chatting no internet in channel
+#3 Chatting no internet in channel
 + https://www.appcoda.com/chat-app-swift-tutorial/
++ https://developer.apple.com/reference/multipeerconnectivity
 
 
 ##アーキテクチャー図
