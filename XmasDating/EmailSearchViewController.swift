@@ -153,7 +153,7 @@ UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func showPulledRequest(_ requestJson: JSON){
-        let al = UIAlertController(title: "Requests", message: "FROM:" + requestJson["from_emails"][0].stringValue, preferredStyle: .alert)
+        let al = UIAlertController(title: "Requests", message: "FROM:" + requestJson["r"]["from_email"].stringValue, preferredStyle: .alert)
         
         let ac = UIAlertAction(title: "Accept", style: .default) { (action) in
             // update accepted = 1;
