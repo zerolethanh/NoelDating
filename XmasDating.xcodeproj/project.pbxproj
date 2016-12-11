@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9920294E1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920294C1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift */; };
+		9920294F1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9920294D1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib */; };
 		9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */; };
 		9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9932022E1DFC0DB300E7F336 /* Photos.framework */; };
 		9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9920294C1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; };
+		9920294D1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListCollectionViewCell.xib; sourceTree = "<group>"; };
 		9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9932022E1DFC0DB300E7F336 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSearchViewController.swift; sourceTree = "<group>"; };
@@ -154,12 +158,14 @@
 				99A47F7A1DFBC308009AE8B2 /* EmailViewController.swift */,
 				99F51DAA1DFBB46F009F23D0 /* UploadPhotoViewController.swift */,
 				9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */,
+				996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */,
 				99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */,
 				99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */,
 				99F51DA81DFBB44D009F23D0 /* Main.storyboard */,
-				996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */,
 				99F51D831DFBB1EA009F23D0 /* Info.plist */,
 				99A47F7C1DFBCA74009AE8B2 /* Extensions.swift */,
+				9920294C1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift */,
+				9920294D1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib */,
 			);
 			path = XmasDating;
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99F51DA91DFBB44D009F23D0 /* Main.storyboard in Resources */,
+				9920294F1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib in Resources */,
 				99F51D821DFBB1EA009F23D0 /* LaunchScreen.storyboard in Resources */,
 				99F51D7F1DFBB1EA009F23D0 /* Assets.xcassets in Resources */,
 			);
@@ -327,6 +334,7 @@
 				9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */,
 				9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */,
 				99A47F6E1DFBBA66009AE8B2 /* XmasDating.swift in Sources */,
+				9920294E1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift in Sources */,
 				99A47F7B1DFBC308009AE8B2 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

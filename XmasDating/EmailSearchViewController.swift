@@ -8,21 +8,97 @@
 //
 
 import UIKit
+import Alamofire
 
-class EmailSearchViewController: UIViewController {
+class EmailSearchViewController: UIViewController ,
+UICollectionViewDelegate, UICollectionViewDataSource {
+
+    var userList : JSON = [] {
+        didSet {
+//            print(userList)
+            userListCollectionView.reloadData()
+        }
+    }
+    var selectedUser : JSON  = []
+    
+    @IBOutlet weak var selectedUserImgView: UIImageView!
+    
+    @IBOutlet weak var userListCollectionView: UICollectionView!
+    @IBOutlet weak var selectedCollectionView: UICollectionView!
+    
+    @IBOutlet weak var selfImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        requestUserList()
+        requestSelfImage()
+    }
+    func requestSelfImage(){
+        let url = URL(string: user(key: "IMAGE"))
+        if let validURL = url {
+            let data = try! Data(contentsOf: validURL)
+            selfImageView.image = UIImage(data: data)
+        }else{
+            print("IMAGE URL IS NOT VALID")
+        }
+    }
+    func requestUserList(){
+        request(XmasDating.photo_sug, method: .get, parameters: ["EMAIL":EMAIL()])
+            .responseJSON { [weak self](res) in
+                debugPrint(res)
+                self?.userList = res.result.json()
+        }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if(userList.count == 0){
+            return 1
+        }
+        return userList.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserListCollectionViewCell
+        
+        cell.imgView.fromURL(url: userList[indexPath.row][
+            "IMAGE"].stringValue)
+        
+        return cell;
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print(indexPath)
+//        print(userList[indexPath.item])
+        selectedUser = userList[indexPath.item]
+        
+        selectedUserImgView.fromURL(url: selectedUser["IMAGE"].stringValue)
+        
+    }
+    @IBAction func invite(_ sender: Any) {
+        request(XmasDating.req_send, method: .get, parameters: [
+            "from_email" : EMAIL(),
+            "to_email" : selectedUser["EMAIL"].stringValue
+            ])
+        .responseJSON { (res) in
+            print(res.result.json())
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func refresh(_ sender: Any) {
+        
+    }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -33,4 +109,14 @@ class EmailSearchViewController: UIViewController {
     }
     */
 
+}
+
+extension UIImageView {
+    func fromURL(url: String?){
+        if let validURLString = url {
+            if let validURL = URL(string: validURLString){
+                self.image = UIImage(data: try! Data(contentsOf: validURL))
+            }
+        }
+    }
 }

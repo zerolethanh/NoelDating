@@ -66,11 +66,16 @@ class EmailViewController: UIViewController {
 
 }
 class XmasDating {
-    static let url="http://133.242.226.127:2345"
+    static let url = "http://133.242.226.127:2345"
     static let user_url = url + "/user"
+    static let photo_url = url + "/photo"
     static let user_email_url = user_url + "/email"
     static let user_email_reg = user_url + "/reg-email"
     static let photo_upload = url + "/photo/upload"
+    static let user_all = user_url + "/all"
+    static let photo_sug = photo_url + "/sug"
+    static let req_send = url + "/req/send"
+    
     static func user_info(email: String, callBack: @escaping (_ user_info: Dictionary<String, Any>) -> () ){
         request(XmasDating.user_email_url + "/\(email)").responseJSON { (res) in
 //            debugPrint(res)
