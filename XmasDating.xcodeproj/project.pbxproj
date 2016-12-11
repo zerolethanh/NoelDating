@@ -13,6 +13,12 @@
 		992029531DFCE5FE00CB2A04 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992029521DFCE5FE00CB2A04 /* MapViewController.swift */; };
 		9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */; };
 		9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9932022E1DFC0DB300E7F336 /* Photos.framework */; };
+		993999DC1DFD17750056B75F /* BLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993999DB1DFD17750056B75F /* BLViewController.swift */; };
+		993999DE1DFD18340056B75F /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993999DD1DFD18340056B75F /* MultipeerConnectivity.framework */; };
+		993999E01DFD1CC50056B75F /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993999DF1DFD1CC50056B75F /* ConnectionManager.swift */; };
+		993999F21DFD1E0A0056B75F /* PeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993999F11DFD1E0A0056B75F /* PeerKit.framework */; };
+		993999F41DFD1E110056B75F /* PeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993999F31DFD1E110056B75F /* PeerKit.framework */; };
+		993999F51DFD1E110056B75F /* PeerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 993999F31DFD1E110056B75F /* PeerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */; };
 		9961775C1DFC3917009DCC31 /* UserPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */; };
 		99A47F6E1DFBBA66009AE8B2 /* XmasDating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */; };
@@ -54,6 +60,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				99A47F781DFBBF63009AE8B2 /* Alamofire.framework in Embed Frameworks */,
+				993999F51DFD1E110056B75F /* PeerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +74,11 @@
 		992029521DFCE5FE00CB2A04 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9932022A1DFBF2F800E7F336 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9932022E1DFC0DB300E7F336 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		993999DB1DFD17750056B75F /* BLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLViewController.swift; sourceTree = "<group>"; };
+		993999DD1DFD18340056B75F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		993999DF1DFD1CC50056B75F /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		993999F11DFD1E0A0056B75F /* PeerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PeerKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/PeerKit-gmcbhmxlgjqlfzajrufzpfnmkmbj/Build/Products/Debug-iphoneos/PeerKit.framework"; sourceTree = "<group>"; };
+		993999F31DFD1E110056B75F /* PeerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PeerKit.framework; sourceTree = "<group>"; };
 		996177591DFC38CD009DCC31 /* EmailSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSearchViewController.swift; sourceTree = "<group>"; };
 		9961775B1DFC3917009DCC31 /* UserPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPropertiesViewController.swift; sourceTree = "<group>"; };
 		99A47F6D1DFBBA66009AE8B2 /* XmasDating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmasDating.swift; sourceTree = "<group>"; };
@@ -93,9 +105,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993999F21DFD1E0A0056B75F /* PeerKit.framework in Frameworks */,
+				993999DE1DFD18340056B75F /* MultipeerConnectivity.framework in Frameworks */,
 				992029511DFCE4B300CB2A04 /* MapKit.framework in Frameworks */,
 				9932022F1DFC0DB300E7F336 /* Photos.framework in Frameworks */,
 				99A47F771DFBBF63009AE8B2 /* Alamofire.framework in Frameworks */,
+				993999F41DFD1E110056B75F /* PeerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +142,8 @@
 		99A47F731DFBBF1A009AE8B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				993999F11DFD1E0A0056B75F /* PeerKit.framework */,
+				993999DD1DFD18340056B75F /* MultipeerConnectivity.framework */,
 				992029501DFCE4B300CB2A04 /* MapKit.framework */,
 				9932022E1DFC0DB300E7F336 /* Photos.framework */,
 			);
@@ -136,6 +153,7 @@
 		99F51D6B1DFBB1EA009F23D0 = {
 			isa = PBXGroup;
 			children = (
+				993999F31DFD1E110056B75F /* PeerKit.framework */,
 				99A47F761DFBBF63009AE8B2 /* Alamofire.framework */,
 				99F51D761DFBB1EA009F23D0 /* XmasDating */,
 				99F51D8B1DFBB1EA009F23D0 /* XmasDatingTests */,
@@ -169,10 +187,12 @@
 				99F51D7E1DFBB1EA009F23D0 /* Assets.xcassets */,
 				99F51D801DFBB1EA009F23D0 /* LaunchScreen.storyboard */,
 				99F51DA81DFBB44D009F23D0 /* Main.storyboard */,
+				993999DB1DFD17750056B75F /* BLViewController.swift */,
 				99F51D831DFBB1EA009F23D0 /* Info.plist */,
 				99A47F7C1DFBCA74009AE8B2 /* Extensions.swift */,
 				9920294C1DFCBE3D00CB2A04 /* UserListCollectionViewCell.swift */,
 				9920294D1DFCBE3D00CB2A04 /* UserListCollectionViewCell.xib */,
+				993999DF1DFD1CC50056B75F /* ConnectionManager.swift */,
 			);
 			path = XmasDating;
 			sourceTree = "<group>";
@@ -335,9 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9961775C1DFC3917009DCC31 /* UserPropertiesViewController.swift in Sources */,
+				993999E01DFD1CC50056B75F /* ConnectionManager.swift in Sources */,
 				99A47F7D1DFBCA74009AE8B2 /* Extensions.swift in Sources */,
 				99F51D781DFBB1EA009F23D0 /* AppDelegate.swift in Sources */,
 				992029531DFCE5FE00CB2A04 /* MapViewController.swift in Sources */,
+				993999DC1DFD17750056B75F /* BLViewController.swift in Sources */,
 				99F51DAB1DFBB46F009F23D0 /* UploadPhotoViewController.swift in Sources */,
 				9932022B1DFBF2F800E7F336 /* SwiftyJSON.swift in Sources */,
 				9961775A1DFC38CD009DCC31 /* EmailSearchViewController.swift in Sources */,
@@ -491,6 +513,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = XmasDating/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -510,6 +533,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = XmasDating/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
