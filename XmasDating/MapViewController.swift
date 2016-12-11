@@ -24,8 +24,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         super.viewWillAppear(true)
         let annotation = MKPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2DMake(37.331652997806785, -122.03072304117417)
-        print(annotation)
-        self.mapView.addAnnotation(annotation)
+        
+        let span = MKCoordinateSpanMake(0.075, 0.075)
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude), span: span)
+        self.mapView.setRegion(region, animated: true)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
